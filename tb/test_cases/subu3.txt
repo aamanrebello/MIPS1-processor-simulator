@@ -1,0 +1,12 @@
+#subu3
+#subu
+#231
+#mr817
+#take away negative number
+#
+#
+
+addi $17, $17, -30
+addi $18, $18, -5
+subu $2, $17, $18
+jr $0

@@ -1,0 +1,13 @@
+#sll2
+#sll
+#72
+#mr817
+#normal multiple ssl
+#
+#
+
+addi $17, $17, 9
+sll $17, $17, 1
+sll $17, $17, 1
+sll $2, $17, 1
+jr $0

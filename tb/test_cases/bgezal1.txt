@@ -1,0 +1,16 @@
+#bgezal1
+#bgezal
+#4
+#apr1718
+#Jump and link back
+#
+#
+
+addi $2, $2, 50
+bgezal $2, 4
+sll $0, $0, $0
+jr $0
+sll $0, $0, $0
+add $2, $2, $2
+add $2, $2, $2
+jr $0

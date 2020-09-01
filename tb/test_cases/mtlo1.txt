@@ -1,0 +1,12 @@
+#mtlo1
+#mtlo
+#30
+#mr817
+#check mtlo by mtlo from reg then to reg2
+#
+#
+
+addi $17, $17, 30
+mtlo $17
+mflo $2
+jr $0

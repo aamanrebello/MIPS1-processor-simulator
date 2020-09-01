@@ -1,0 +1,15 @@
+#jr2
+#jr
+#245
+#mr817
+#jump to memory error
+#
+#
+
+addi $17, $17, 2
+sll $17, $17, 28
+addi $17, $17, 24 
+jr $17
+addi $2, $2, 10
+addi $2, $2, 25
+jr $0

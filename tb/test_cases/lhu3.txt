@@ -1,0 +1,14 @@
+#lhu3
+#lhu
+#0
+#apr1718
+#check that loaded register is not sign extended
+#
+#
+
+addi $3, $0, 0xe0da
+lui $4, 0x2000
+sw $3, 20($4)
+lhu $2, 22($4)
+srl $2, $2, 16
+jr $0

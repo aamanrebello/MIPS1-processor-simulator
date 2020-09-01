@@ -1,0 +1,11 @@
+#srl2
+#srl
+#1
+#mr817
+#check if 0 added to the right
+#
+#
+
+addi $17, $17, 0xffff
+srl $2, $17, 31
+jr $0

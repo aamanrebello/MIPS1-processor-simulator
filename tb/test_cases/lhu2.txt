@@ -1,0 +1,13 @@
+#lhu2
+#lhu
+#218
+#apr1718
+#load halfword from stored word
+#
+#
+
+addi $3, $0, 0xe0da
+lui $4, 0x2000
+sw $3, 20($4)
+lhu $2, 22($4)
+jr $0

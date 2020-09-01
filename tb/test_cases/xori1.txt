@@ -1,0 +1,11 @@
+#xori1
+#xori
+#239
+#apr1718
+#check if xori result is correct
+#
+#
+
+addi $2, $0, 0x1010
+xori $2, $2, 0xffff
+jr $0

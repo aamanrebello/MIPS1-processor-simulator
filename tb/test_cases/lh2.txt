@@ -1,0 +1,11 @@
+#lh2
+#lh
+#245
+#apr1718
+#misaligned half word
+#
+#
+
+lui $3, 0x2000
+lh $2, 1($3)
+jr $0

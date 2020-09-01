@@ -1,0 +1,13 @@
+#mult6
+#mult
+#251
+#mr817
+#mult ffffffff × 5 = 4 FFFF FFFB check lo
+#
+# 
+
+addi $17, $17, 0xffff
+addi $18, $18, 0x5
+multu $17, $18
+mflo $2
+jr $0

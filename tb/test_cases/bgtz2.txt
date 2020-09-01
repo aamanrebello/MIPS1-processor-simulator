@@ -1,0 +1,15 @@
+#bgtz2
+#bgtz
+#100
+#mr817
+#rs<0 not skip
+#
+#
+
+addi $17, $17, -2
+bgtz $17, 3
+addi $19, $19, 60
+addi $19, $19, 40
+add $2, $0, $19
+add $2, $0, $19
+jr $0

@@ -1,0 +1,12 @@
+#addi2
+#addi
+#246
+#mr817
+#overflow check
+#
+#
+
+lui $17, $0, 0x7ffe
+ori $17, $17, 0xffff
+addi $2, $17, 2
+jr $0

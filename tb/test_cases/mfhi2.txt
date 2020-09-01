@@ -1,0 +1,10 @@
+#mfhi2
+#mfhi
+#0
+#mr817
+#checks from hi to reg when hi is 0
+#
+#
+
+mfhi $2
+jr $0

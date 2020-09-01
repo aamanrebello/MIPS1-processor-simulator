@@ -1,0 +1,12 @@
+#mflo1
+#mflo
+#30
+#mr817
+#check from lo to reg after mtlo
+#
+#
+
+addi $17, $17, 30
+mtlo $17
+mflo $2
+jr $0

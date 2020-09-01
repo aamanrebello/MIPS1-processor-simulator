@@ -1,0 +1,15 @@
+#lwr1
+#lwr
+#35
+#apr1718
+#checks that lwr works
+#
+#
+
+lui $4, 0x2000
+addi $2, $0, 0x8eee
+lui $3, 0x4023
+sw $3, 0($4) 
+add $4, $4, 1
+lwr $2, 0($4)
+jr $0

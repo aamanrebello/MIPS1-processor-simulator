@@ -1,0 +1,11 @@
+#sltiu2
+#sltiu
+#0
+#mr817
+# rs>imm false
+#
+#
+
+addi $17, $17, 0xffff
+sltiu $2, $17, 1
+jr $0

@@ -1,0 +1,13 @@
+#div1
+#div
+#5
+#mr817
+#normal 32 div 7 lo check
+#
+#
+
+addi $17, $17, 37
+addi $18, $18, 7
+div $17, $18
+mflo $2
+jr $0

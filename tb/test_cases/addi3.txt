@@ -1,0 +1,12 @@
+#addi3
+#addi
+#246
+#mr817
+#negative overflow check
+#
+#
+
+addi $17, $0, 1
+sll $17, $17, 31
+addi $2, $17, 0xffff
+jr $0

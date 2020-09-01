@@ -1,0 +1,12 @@
+#addiu2
+#addiu
+#80
+#mr817
+#normal + - test 100-20
+#
+#
+
+addiu $17, $0, 100
+addiu $2, $17, -20
+jr $0
+

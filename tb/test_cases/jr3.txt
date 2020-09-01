@@ -1,0 +1,15 @@
+#jr3
+#jr
+#245
+#mr817
+#jump to incorrect/misaligned pc
+#
+#
+
+addi $17, $17, 1
+sll $17, $17, 28
+addi $17, $17, 25 
+jr $17
+addi $2, $2, 10
+addi $2, $2, 25
+jr $0

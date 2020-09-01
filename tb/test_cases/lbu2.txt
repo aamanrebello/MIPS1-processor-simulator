@@ -1,0 +1,14 @@
+#lbu2
+#lbu
+#0
+#apr1718
+#check for no sign extension
+#
+#
+
+lui $4, 0x2000
+addi $3, $0, 0xfff0
+sw $3, 0($4)
+lbu $2, 3($4)
+srl $2, $2, 8
+jr $0

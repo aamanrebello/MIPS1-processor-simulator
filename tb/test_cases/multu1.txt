@@ -1,0 +1,13 @@
+#multu1
+#multu
+#0
+#mr817
+#mult 10 times 20 =200 check hi
+#
+#
+
+addiu $17, $17, 10
+addiu $18, $18, 20
+multu $17, $18
+mfhi $2
+jr $0

@@ -1,0 +1,16 @@
+#jalr1
+#jalr
+#55
+#mr817
+#normal no specified rd(rd=31 automatic)
+#
+#
+
+addi $17, $17, 1
+sll $17, $17, 28
+addi $17, $17, 20 
+jalr $17
+addi $2, $2, 10
+addi $2, $2, 25
+add $2, $2, $31
+jr $0

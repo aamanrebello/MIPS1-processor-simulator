@@ -1,0 +1,13 @@
+#mult5
+#mult
+#241
+#mr817
+#mult  ffffffff × f = E FFFF FFF1 check lo
+#
+#
+
+addi $17, $17, -1
+addi $18, $18, 15
+mult $17, $18
+mflo $2
+jr $0

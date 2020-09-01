@@ -1,0 +1,15 @@
+#Internal_testing2
+#Internal_testing
+#0
+#mr817
+#checks if can write to register 0
+#
+#
+
+
+
+addi $0, $0, 0x2
+add $2, $0, $0
+jr $0
+
+

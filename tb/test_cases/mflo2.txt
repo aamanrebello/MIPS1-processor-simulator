@@ -1,0 +1,10 @@
+#mflo2
+#mflo
+#0
+#mr817
+#checks from lo to reg when lo is 0
+#
+#
+
+mflo $2
+jr $0

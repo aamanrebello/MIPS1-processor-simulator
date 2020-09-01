@@ -1,0 +1,15 @@
+#blez4
+#blez
+#245
+#mr817
+#out of range
+#
+#
+
+addi $17, $17, -50
+blez $17, -22
+addi $19, $19, 60
+addi $19, $19, 40
+add $2, $0, $19
+add $2, $0, $19
+jr $0

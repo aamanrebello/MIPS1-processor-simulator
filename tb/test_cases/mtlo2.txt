@@ -1,0 +1,11 @@
+#mtlo2
+#mtlo
+#0
+#mr817
+#checks for reg to lo
+#
+#
+
+addi $17, $17, 30
+mtlo $17
+jr $0

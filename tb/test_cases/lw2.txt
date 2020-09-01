@@ -1,0 +1,14 @@
+#lw2
+#lw
+#80
+#apr1718
+#load stored word into target register
+#
+#
+
+addi $4, $0, 0x3450
+lui $3, 0x2200
+sb $4, 3($3)
+lw $2, 0($3)
+jr $0
+

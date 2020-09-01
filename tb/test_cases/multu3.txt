@@ -1,0 +1,13 @@
+#mult3
+#mult
+#254
+#mr817
+#mult ffffffff × ffffffff = FFFF FFFE 0000 0000 check hi 
+#
+#
+
+addi $17, $17, 0xffff
+addi $18, $18, 0xffff
+multu $17, $18
+mfhi $2
+jr $0

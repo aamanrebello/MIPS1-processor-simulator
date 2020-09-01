@@ -1,0 +1,11 @@
+#lhu1
+#lhu
+#0
+#apr1718
+#load from empty memory address
+#
+#
+
+lui $5, 0x2300
+lhu $2, 2($5)
+jr $0

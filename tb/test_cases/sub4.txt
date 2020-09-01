@@ -1,0 +1,13 @@
+#sub4
+#sub
+#246
+#mr817
+#overflow error
+#
+#
+
+addi $17, $17, 1
+sll  $17, $17, 31
+addi $18, $18, 1
+sub $2, $17, $18
+jr $0

@@ -1,0 +1,12 @@
+#xor1
+#xor
+#140
+#apr1718
+#check if result of xor is correct
+#
+#
+
+ori $3, $0, 0xffff
+ori $2, $0, 0x0073
+xor $2, $2, $3
+jr $0

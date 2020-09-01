@@ -1,0 +1,12 @@
+#lw1
+#lw
+#0
+#apr1718
+#load word from unwritten memory
+#
+#
+
+lui $3, 0x2000
+addi $3, $3, 4
+lw $2, 0($3)
+jr $0

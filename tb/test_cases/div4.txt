@@ -1,0 +1,13 @@
+#div4
+#div
+#0
+#mr817
+#0/37 check hi
+#
+#
+
+addi $17, $17, 0
+addi $18, $18, 37
+div $17, $18
+mfhi $2
+jr $0

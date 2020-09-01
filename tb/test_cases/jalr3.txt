@@ -1,0 +1,16 @@
+#jalr3
+#jalr
+#245
+#mr817
+#misaligned address
+#
+#
+
+addi $17, $17, 1
+sll $17, $17, 28
+addi $17, $17, 21 
+jalr $16, $17
+addi $2, $2, 10
+addi $2, $2, 25
+add $2, $2, $16
+jr $0

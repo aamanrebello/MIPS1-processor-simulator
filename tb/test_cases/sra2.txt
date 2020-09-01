@@ -1,0 +1,11 @@
+#sra2
+#sra
+#255
+#mr817
+#check if sign duplicates
+#
+#
+
+addi $17, $17, 0xffff
+sra $2, $17, 30
+jr $0

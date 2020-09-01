@@ -1,0 +1,13 @@
+#divu1
+#divu
+#5
+#mr817
+#37/7 check lo
+#
+#
+
+addi $17, $17, 37
+addi $18, $18, 7
+divu $17, $18
+mflo $2
+jr $0

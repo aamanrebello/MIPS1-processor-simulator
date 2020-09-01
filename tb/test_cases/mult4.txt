@@ -1,0 +1,13 @@
+#mult4
+#mult
+#255
+#mr817
+#mult  ffffffff × f = E FFFF FFF1 check hi
+#
+#
+
+addi $17, $17, -1
+addi $18, $18, 15
+mult $17, $18
+mfhi $2
+jr $0

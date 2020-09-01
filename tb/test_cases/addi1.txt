@@ -1,0 +1,10 @@
+#addi1
+#addi
+#100
+#mr817
+#normal check 0 +imm 100
+#
+#
+
+addi $2, $0, 100
+jr $0

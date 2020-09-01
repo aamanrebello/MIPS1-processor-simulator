@@ -1,0 +1,11 @@
+#addiu1
+#addiu
+#100
+#mr817
+#normal 50+50
+#
+#
+
+addiu $17, $0, 50
+addiu $2, $17, 50
+jr $0

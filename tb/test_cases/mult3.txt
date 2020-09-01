@@ -1,0 +1,13 @@
+#mult3
+#mult
+#16
+#mr817
+#mult 2 negative numbers
+#
+#
+
+addi $17, $17, -2
+addi $18, $18, -8
+mult $17, $18
+mflo $2
+jr $0

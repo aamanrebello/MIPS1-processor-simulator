@@ -1,0 +1,12 @@
+#sllv1
+#sllv
+#40
+#mr817
+#normal multiple sslv
+#
+#
+
+addi $17, $17, 10
+addi $18, $18, 2
+sllv $2, $17, $18
+jr $0

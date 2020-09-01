@@ -1,0 +1,9 @@
+#mthi2
+#mthi
+#0
+#mr817
+#check from reg to hi
+
+addi $17, $17, 30
+mthi $17
+jr $0

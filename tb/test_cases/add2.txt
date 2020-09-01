@@ -1,0 +1,13 @@
+#add2
+#add
+#246
+#mr817
+#overflow check
+#
+#
+
+addiu $17, $17, 0x7fff
+sll $17, $17, 16
+addiu $17, $17, 0xffff
+add $2, $17, $17
+jr $0

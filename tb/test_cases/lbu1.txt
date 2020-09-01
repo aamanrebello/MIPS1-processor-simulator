@@ -1,0 +1,13 @@
+#lbu1
+#lbu
+#240
+#apr1718
+#check if load works
+#
+#
+
+lui $4, 0x2000
+addi $3, $0, 0xfff0
+sw $3, 0($4)
+lbu $2, 3($4)
+jr $0

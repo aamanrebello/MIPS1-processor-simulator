@@ -1,0 +1,13 @@
+#add2
+#add
+#246
+#mr817
+#negative overflow check
+#
+#
+
+addi $17, $17, 1
+sll $17, $17, 31
+addi $18, $18, -1
+add $2, $17, $18
+jr $0

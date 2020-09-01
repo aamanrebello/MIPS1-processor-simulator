@@ -1,0 +1,12 @@
+#sw1
+#sw
+#
+#apr1718
+#putchar
+#
+#a
+
+lui $3, 0x3000
+addi $4, 0x0361
+sw $4, 0($3)
+jr $0

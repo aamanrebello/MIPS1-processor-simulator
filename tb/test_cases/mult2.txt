@@ -1,0 +1,13 @@
+#mult2
+#mult
+#200
+#mr817
+#mult 10 times 20 =200 check lo
+#
+#
+
+addiu $17, $17, 10
+addiu $18, $18, 20
+mult $17, $18
+mflo $2
+jr $0

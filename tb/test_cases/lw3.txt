@@ -1,0 +1,12 @@
+#lw3
+#lw
+#245
+#apr1718
+#unaligned memory address
+#
+#
+
+add $2, $0, 3
+lui $3, 0x2100
+lw $4, 1($3)
+jr $0

@@ -1,0 +1,14 @@
+#jal2
+#jal
+#245
+#mr817
+#out of range
+#
+#
+
+addi $19, $19, 10
+jal -22
+addi $19, $19, 10
+addi $2, $2, 12
+add $2, $2, $31
+jr $0

@@ -1,0 +1,15 @@
+#bgtz4
+#bgtz
+#245
+#mr817
+#out of range pc
+#
+#
+
+addi $17, $17, 10
+bgtz $17, -22
+addi $19, $19, 60
+addi $19, $19, 60
+add $2, $0, $19
+add $2, $0, $19
+jr $0

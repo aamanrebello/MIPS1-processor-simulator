@@ -1,0 +1,12 @@
+#mthi1
+#mthi
+#30
+#mr817
+#check from reg to hi then back to r2
+#
+#
+
+addi $17, $17, 30
+mthi $17
+mfhi $2
+jr $0

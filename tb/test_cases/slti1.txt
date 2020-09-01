@@ -1,0 +1,11 @@
+#slti1
+#slti
+#1
+#mr817
+# rs<imm
+#
+#
+
+addi $17, $17, 4
+slti $2, $17, 20
+jr $0

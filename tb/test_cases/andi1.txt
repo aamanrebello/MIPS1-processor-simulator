@@ -1,0 +1,13 @@
+#andi1
+#andi
+#42
+#mr817
+#normal 0xffffffff and with #42
+#
+#
+
+addi $17, $17, 0xffff
+sll $17, $17, 16
+addi $17, $17, 0xffff
+andi $2, $17, 42
+jr $0

@@ -1,0 +1,12 @@
+#sltu2
+#sltu
+#1
+#mr817
+# rs<rt true
+#
+#
+
+addi $17, $17, 1
+addi $18, $18, -1
+sltu $2, $17, $18
+jr $0
