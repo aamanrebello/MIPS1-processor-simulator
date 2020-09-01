@@ -39,7 +39,12 @@ Similar testbenches/ simulators may also be used.
 
 **MORE INFORMATION**
 
-This project is based on [this spec](https://github.com/m8pple/arch2-2019-cw). It was done as part of an assessment, but the implementation of the spec is the original work of the authors.
+This project is based on [this spec](https://github.com/m8pple/arch2-2019-cw). It was done as part of an assessment, but the implementation of the spec is the original work of the authors (co-authored with Shafir360). 
+
+The simulator performs well on most functionalities however there are known issues with:
+1. lwl/lwr on instruction memory
+
+The testbench is unfortunately not exhaustive in testing, and has quite a few bugs, especially on jump instructions. It is quite easy to modify/ add new tests though.
 
 **ACKNOWLEDGEMENTS**
 
