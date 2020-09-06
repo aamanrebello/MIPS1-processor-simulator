@@ -54,7 +54,7 @@ public:
   std::int32_t GETCreadbyte();
   int PUTCwritebyte(std::int32_t word);
   // Related with PC manipulation.
-  int advancePC(int newNPC);
+  void advancePC(int newNPC);
   int getPC();
   int getNPC();
 };

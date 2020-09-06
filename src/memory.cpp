@@ -318,7 +318,7 @@ int memory::PUTCwritebyte(std::int32_t word)//memory mapped output - TESTED
 }
 
 
-int memory::advancePC(int newNPC)
+void memory::advancePC(int newNPC)
 {
     if(NPC%4 == 0)
     {
