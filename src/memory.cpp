@@ -5,7 +5,7 @@
 #include "memory.hpp"
 
 
-bool memory::read_and_store_instructions(std::string filename)//TESTED
+bool memory::read_and_store_instructions(std::string filename)
 {
     std::ifstream myfile;
     myfile.open(filename, std::ios::binary|std::ios::ate);
@@ -64,7 +64,7 @@ std::int32_t memory::read_instr_byte(int address)
     return (unsigned char)instructions[address - ADDR_INSTR];
 }
 
-std::int32_t memory::load_byte(int address, char format) const//TESTED
+std::int32_t memory::load_byte(int address, char format) const
 {
     // Check address range
     if((address >= ADDR_DATA)&&(address < ADDR_DATA + DATA_SIZE))
@@ -96,7 +96,7 @@ std::int32_t memory::load_byte(int address, char format) const//TESTED
 }
 
 
-std::int32_t memory::load_half_word(int address, char format) const//TESTED
+std::int32_t memory::load_half_word(int address, char format) const
 {
     // Check address range
     if(((address >= ADDR_DATA)&&((address + 1) < ADDR_DATA + DATA_SIZE))||((address >= ADDR_INSTR)&&((address + 1) < ADDR_INSTR + INSTR_SIZE)))
@@ -141,7 +141,7 @@ std::int32_t memory::load_half_word(int address, char format) const//TESTED
 }
 
 
-std::int32_t memory::load_word(int address) const//TESTED
+std::int32_t memory::load_word(int address) const
 {
     // Range check
     if(((address >= ADDR_DATA)&&((address + 3) < ADDR_DATA + DATA_SIZE))||((address >= ADDR_INSTR)&&((address + 3) < ADDR_INSTR + INSTR_SIZE)))
@@ -164,7 +164,7 @@ std::int32_t memory::load_word(int address) const//TESTED
 }
 
 
-std::int32_t memory::load_word_left(int address, std::int32_t register_value) const// TESTED
+std::int32_t memory::load_word_left(int address, std::int32_t register_value) const
 {
     int offset = 3 - (address%4);
     // Range check
@@ -193,7 +193,7 @@ std::int32_t memory::load_word_left(int address, std::int32_t register_value) co
 }
 
 
-std::int32_t memory::load_word_right(int address, std::int32_t register_value) const// TESTED
+std::int32_t memory::load_word_right(int address, std::int32_t register_value) const
 {
     int offset = address%4;
     if(((address >= ADDR_DATA)&&((address + (3-offset)) < ADDR_DATA + DATA_SIZE))||((address >= ADDR_INSTR)&&((address + (3-offset)) < ADDR_INSTR + INSTR_SIZE)))
@@ -221,7 +221,7 @@ std::int32_t memory::load_word_right(int address, std::int32_t register_value) c
 }
 
 
-int memory::store_byte(int address, std::int32_t word)//TESTED - stores byte
+int memory::store_byte(int address, std::int32_t word)
 {
     // range check
     if((address >= ADDR_DATA)&&(address < ADDR_DATA + DATA_SIZE))
@@ -237,7 +237,7 @@ int memory::store_byte(int address, std::int32_t word)//TESTED - stores byte
 }
 
 
-int memory::store_half_word(int address, std::int32_t word)//TESTED
+int memory::store_half_word(int address, std::int32_t word)
   {
     // alignment check
     if(address%2 == 0)
@@ -261,7 +261,7 @@ int memory::store_half_word(int address, std::int32_t word)//TESTED
 }
 
 
-int memory::store_word(int address, std::int32_t word)//TESTED - stores word
+int memory::store_word(int address, std::int32_t word)
 {
     // Alignment check
     if(address%4 == 0)
@@ -287,7 +287,7 @@ int memory::store_word(int address, std::int32_t word)//TESTED - stores word
 }
 
 
-int memory::GETCreadbyte()//memory mapped input - TESTED
+int memory::GETCreadbyte()
 {
     GETCmemory[3] = std::getchar();
     if(GETCmemory[3] == EOF)
@@ -301,7 +301,7 @@ int memory::GETCreadbyte()//memory mapped input - TESTED
 }
 
 
-int memory::PUTCwritebyte(std::int32_t word)//memory mapped output - TESTED
+int memory::PUTCwritebyte(std::int32_t word)
   {
     PUTCmemory[0] = (word >> 24)&0xFF;
     PUTCmemory[1] = (word >> 16)&0xFF;
@@ -343,7 +343,7 @@ void memory::advancePC(int newNPC)
 }
 
 
-int memory::getPC()//TESTED
+int memory::getPC()
 {
     return PC;
 }
